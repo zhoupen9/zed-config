@@ -1,0 +1,41 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-o": null,
+      "alt-w": "editor::Copy",
+      "ctrl-y": "editor::Paste",
+      "alt-y": "editor::Paste",
+      "ctrl-n": "editor::MoveDown",
+      "ctrl-p": "editor::MoveUp"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-n": null,
+      "ctrl-o": null,
+      "alt-x": "command_palette::Toggle",
+      "ctrl-c ctrl-n": "workspace::NewFile",
+      "ctrl-c ctrl-o": "workspace::OpenFiles",
+      "alt-o": "workspace::ActivateNextPane"
+    }
+  },
+  // Bindings for accepting edit predictions
+  //
+  // alt-l is provided as an alternative to tab/alt-tab. and will be displayed in the UI. This is
+  // because alt-tab may not be available, as it is often used for window switching.
+  {
+    "context": "Editor && edit_prediction",
+    "bindings": {
+      "alt-l": "editor::AcceptEditPrediction",
+      "tab": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction_conflict",
+    "bindings": {
+      "alt-l": "editor::AcceptEditPrediction"
+    }
+  }
+]
