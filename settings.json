@@ -33,14 +33,14 @@
     "default_profile": "ask",
     "default_model": {
       "provider": "openrouter",
-      "model": "mistralai/devstral-small:free"
+      "model": "mistralai/devstral-small-2505:free"
     }
   },
   "cursor_shape": "block",
   "theme": "Minimal color scheme",
   "ui_font_size": 13,
   "agent_font_size": 14,
-  "ui_font_family": "Inter",
+  "ui_font_family": "Adwaita Sans",
   "buffer_font_family": "Monaspace Neon",
   "buffer_line_height": {
     "custom": 1.3
@@ -52,6 +52,11 @@
   },
   "scrollbar": {
     "show": "auto"
+  },
+  "project_panel": {
+    "indent_guides": {
+      "show": "always"
+    }
   },
   "git": {
     "git_gutter": "tracked_files",
